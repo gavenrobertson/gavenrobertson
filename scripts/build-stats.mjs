@@ -15,6 +15,7 @@ const SANS = "font-family:BG, 'Segoe UI', Helvetica, Arial, sans-serif";
 
 const QUERY = `query($login:String!){
   user(login:$login){
+    createdAt
     followers{ totalCount }
     repositories(first:100, ownerAffiliations:OWNER, isFork:false, orderBy:{field:STARGAZERS, direction:DESC}){
       totalCount
@@ -34,6 +35,7 @@ const QUERY = `query($login:String!){
 async function fetchData() {
   if (MOCK) {
     return {
+      createdAt: "2021-11-17T00:00:00Z",
       followers: { totalCount: 42 },
       repositories: {
         totalCount: 18,
@@ -86,6 +88,8 @@ function build(u) {
   const commits = cc.totalCommitContributions + cc.restrictedContributionsCount;
   const stars = u.repositories.nodes.reduce((a, r) => a + r.stargazerCount, 0);
   const year = new Date().getUTCFullYear();
+  const joined = new Date(u.createdAt);
+  const yearsOn = Math.max(0, Math.floor((Date.now() - joined.getTime()) / (365.25 * 24 * 3600 * 1000)));
 
   // Languages weighted by bytes across non-fork repos.
   const langs = new Map();
@@ -103,9 +107,9 @@ function build(u) {
     { label: `contributions · ${year}`, value: fmt(cc.contributionCalendar.totalContributions), color: C.accent },
     { label: "commits", value: fmt(commits), color: C.text },
     { label: "pull requests", value: fmt(cc.totalPullRequestContributions), color: C.text },
-    { label: "reviews + issues", value: fmt(cc.totalPullRequestReviewContributions + cc.totalIssueContributions), color: C.text },
+    { label: "public repos", value: fmt(u.repositories.totalCount), color: C.text },
     { label: "stars earned", value: fmt(stars), color: C.accent },
-    { label: "followers", value: fmt(u.followers.totalCount), color: C.text },
+    { label: `years · since ${joined.getUTCFullYear()}`, value: String(yearsOn), color: C.text },
   ];
 
   let s = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="GitHub stats for ${esc(LOGIN)}">`;
