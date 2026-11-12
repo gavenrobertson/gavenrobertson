@@ -49,6 +49,6 @@ Through **Webfoot Software Studio** I design and build websites for churches and
 
 [![Website](https://img.shields.io/badge/gavenrobertson.dev-0C1611?style=for-the-badge&logo=googlechrome&logoColor=FEE123)](https://gavenrobertson.dev)
 [![Dragon Warriors](https://img.shields.io/badge/dragonwarriors.app-0B0806?style=for-the-badge&logo=battledotnet&logoColor=F0B21C)](https://dragonwarriors.app)
-[![LinkedIn](https://img.shields.io/badge/linkedin-0C1611?style=for-the-badge&logo=inspire&logoColor=FEE123)](https://www.linkedin.com/in/gavenrobertson)
+[![LinkedIn](https://img.shields.io/badge/linkedin-0C1611?style=for-the-badge&logo=inspire&logoColor=FEE123)](https://www.linkedin.com/in/gaven-robertson)
 
 <img src="assets/footer.svg" alt="" width="100%">
