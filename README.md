@@ -21,6 +21,15 @@ I like making things that feel good to use: clean front ends, offline-first desk
 
 <sub>Code: <a href="https://github.com/gavenrobertson/WoWDragonWarriors">Dragon Warriors</a> · <a href="https://github.com/gavenrobertson/LineWise">LineWise</a> · <a href="https://github.com/gavenrobertson/MealAtAGlance">Meal at a Glance</a> · <a href="https://github.com/gavenrobertson/portfolio-website">gavenrobertson.dev</a></sub>
 
+### ▸ Built for churches
+
+Through **Webfoot Software Studio** I design and build websites for churches and organizations. No templates. Here are two that are live.
+
+<p align="center">
+  <a href="https://redemptionchurchfamily.com"><img src="assets/card-redemption-church.svg" alt="Redemption Church: Pentecostal church in Montgomery. Events, sermons and bulletins, with a Live Now badge on service days." width="49%"></a>
+  <a href="https://capitalcitychurchofgod.com"><img src="assets/card-capital-city-church.svg" alt="Capital City Church of God: homepage redesign for a church in Salem, Oregon that puts visitors and service times first." width="49%"></a>
+</p>
+
 ### ▸ Stack
 
 <img src="assets/stack.svg" alt="Core languages: C++ (primary), C, Python, Java, C#. Systems and tooling: Linux, CMake, GDB, Git, Docker, Bash. Networking: TCP/IP, socket programming, Wireshark. Apps and web: TypeScript, React, Tauri, SQL." width="100%">
