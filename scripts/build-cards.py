@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Builds the client website cards (churches and organizations) in assets/ in the same style as the project cards.
-Fonts are copied from assets/card-portfolio.svg so nothing extra is needed."""
+"""Builds project and client cards in assets/ (640x340, shared style).
+Fonts are copied from assets/header.svg so nothing extra is needed."""
 import re, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-src = (ROOT / "assets/card-portfolio.svg").read_text()
+src = (ROOT / "assets/header.svg").read_text()
 FONTS = "".join(re.findall(r"@font-face\{[^}]*\}", src))
 STYLE = (FONTS +
   ".pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}"
@@ -128,3 +128,28 @@ hardhat = f'''<g transform="translate(436 30)">
 card("ehs-now", "EHS Now", 33, "EHSNOW.NET",
      ["Environmental health and safety", "consulting with a custom OSHA", "safety program builder."],
      ["Tri-Cities, WA", "OSHA", "Consulting"], hardhat, **E)
+
+# --- Portfolio: a browser window with the site's hero ---
+P = dict(bg="#0E1220", border="#2A3558", accent="#7FB2FF", text="#EEF2FF", muted="#9AA6C8", chip="#18203A")
+browser = f'''<g transform="translate(428 40)">
+<rect x="0" y="0" width="184" height="216" rx="12" fill="#161C33" stroke="{P['border']}" stroke-width="2"/>
+<path d="M0 30 H184" stroke="{P['border']}" stroke-width="2"/>
+<circle cx="16" cy="15" r="4" fill="#FF6B5E" opacity=".85"/><circle cx="30" cy="15" r="4" fill="#FEE123" opacity=".85"/><circle cx="44" cy="15" r="4" fill="#4CD07D" opacity=".85"/>
+<rect x="58" y="8" width="112" height="14" rx="7" fill="#0E1220"/>
+<text x="114" y="18.5" text-anchor="middle" style="{MONO};font-size:9px" fill="{P['muted']}">gavenrobertson.dev</text>
+<text x="18" y="66" style="{SANS};font-weight:800;font-size:17px;letter-spacing:-.4px" fill="{P['text']}">Gaven Robertson</text>
+<text x="18" y="84" style="{MONO};font-size:9.5px" fill="{P['accent']}">software engineer</text>
+<rect x="18" y="98" width="130" height="5" rx="2.5" fill="{P['muted']}" opacity=".45"/>
+<rect x="18" y="109" width="104" height="5" rx="2.5" fill="{P['muted']}" opacity=".3"/>
+<rect x="18" y="126" width="62" height="18" rx="9" fill="{P['accent']}"/>
+<text x="49" y="138.5" text-anchor="middle" style="{MONO};font-size:9px;font-weight:700" fill="#0E1220">projects</text>
+<rect x="18" y="160" width="44" height="38" rx="6" fill="#0E1220" stroke="{P['border']}"/>
+<rect x="70" y="160" width="44" height="38" rx="6" fill="#0E1220" stroke="{P['border']}"/>
+<rect x="122" y="160" width="44" height="38" rx="6" fill="#0E1220" stroke="{P['border']}"/>
+<rect x="26" y="168" width="20" height="4" rx="2" fill="{P['accent']}" opacity=".9"/><rect x="26" y="178" width="28" height="4" rx="2" fill="{P['muted']}" opacity=".4"/>
+<rect x="78" y="168" width="20" height="4" rx="2" fill="#F9A8D4" opacity=".9"/><rect x="78" y="178" width="28" height="4" rx="2" fill="{P['muted']}" opacity=".4"/>
+<rect x="130" y="168" width="20" height="4" rx="2" fill="#A5F3FC" opacity=".9"/><rect x="130" y="178" width="28" height="4" rx="2" fill="{P['muted']}" opacity=".4"/>
+</g>'''
+card("portfolio", "Gaven Robertson", 33, "GAVENROBERTSON.DEV",
+     ["My portfolio: who I am, what", "I've built, and how to get", "in touch."],
+     ["React", "three.js", "Blender"], browser, **P)
