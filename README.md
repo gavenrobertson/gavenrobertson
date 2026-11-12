@@ -25,6 +25,14 @@ I like making things that feel good to use: clean front ends, offline-first desk
 
 <img src="assets/stack.svg" alt="Core languages: C++ (primary), C, Python, Java, C#. Systems and tooling: Linux, CMake, GDB, Git, Docker, Bash. Networking: TCP/IP, socket programming, Wireshark. Apps and web: TypeScript, React, Tauri, SQL." width="100%">
 
+### ▸ Activity
+
+<img src="https://raw.githubusercontent.com/gavenrobertson/gavenrobertson/output/snake.svg" alt="A yellow snake eating its way through my contribution graph" width="100%">
+
+<img src="https://raw.githubusercontent.com/gavenrobertson/gavenrobertson/output/stats.svg" alt="GitHub stats: contributions, commits, pull requests, stars and top languages" width="100%">
+
+<sub>Refreshed every six hours by <a href=".github/workflows/profile.yml">a workflow</a> in this repo. The snake is <a href="https://github.com/Platane/snk">Platane/snk</a>; the stats card is <a href="scripts/build-stats.mjs">hand-rolled</a> to match.</sub>
+
 ### ▸ Find me
 
 [![Website](https://img.shields.io/badge/gavenrobertson.dev-0C1611?style=for-the-badge&logo=googlechrome&logoColor=FEE123)](https://gavenrobertson.dev)
