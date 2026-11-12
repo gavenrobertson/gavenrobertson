@@ -125,7 +125,7 @@ hardhat = f'''<g transform="translate(436 30)">
 </g>
 <rect x="22" y="222" width="132" height="4" rx="2" fill="{E['border']}"/><rect class="live" x="22" y="222" width="99" height="4" rx="2" fill="#86EFAC"/>
 </g>'''
-card("ehs-now", "EHS Now", 33, "EHSNOW.NET",
+card("ehs-now", "EHS Now", 33, "ENVIRONMENTAL HEALTH & SAFETY",
      ["Environmental health and safety", "consulting with a custom OSHA", "safety program builder."],
      ["Tri-Cities, WA", "OSHA", "Consulting"], hardhat, **E)
 

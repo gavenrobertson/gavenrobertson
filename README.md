@@ -23,14 +23,14 @@ I like making things that feel good to use: clean front ends, offline-first desk
 
 ### ▸ Built for churches and organizations
 
-Through **Webfoot Software Studio** I design and build websites for churches and organizations. Here are some that are live.
+Through **Webfoot Software Studio** I design and build websites for churches and organizations. A few of them:
 
 <p align="center">
   <a href="https://redemptionchurchfamily.com"><img src="assets/card-redemption-church.svg" alt="Redemption Church: Pentecostal church in Montgomery. Events, sermons and bulletins, with a Live Now badge on service days." width="49%"></a>
   <a href="https://capitalcitychurchofgod.com"><img src="assets/card-capital-city-church.svg" alt="Capital City Church of God: homepage redesign for a church in Salem, Oregon that puts visitors and service times first." width="49%"></a>
 </p>
 <p align="center">
-  <a href="https://www.ehsnow.net"><img src="assets/card-ehs-now.svg" alt="EHS Now: environmental health and safety consulting in Tri-Cities, Washington, with a custom OSHA safety program builder." width="49%"></a>
+  <img src="assets/card-ehs-now.svg" alt="EHS Now: environmental health and safety consulting in Tri-Cities, Washington, with a custom OSHA safety program builder." width="49%">
 </p>
 
 ### ▸ Stack
