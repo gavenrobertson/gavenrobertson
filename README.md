@@ -16,7 +16,7 @@ I like making things that feel good to use: clean front ends, offline-first desk
 </p>
 <p align="center">
   <a href="https://github.com/gavenrobertson/MealAtAGlance"><img src="assets/card-meal-at-a-glance.svg" alt="Meal at a Glance: plan a week of meal prep with AI, then get one priced grocery list from Walmart, Kroger or Instacart. React, Hono, Claude API." width="49%"></a>
-  <a href="https://gavenrobertson.dev"><img src="assets/card-portfolio.svg" alt="gavenrobertson.dev: my portfolio. Scroll to build a PC, then load projects from CDs in GavenOS 2000. React, three.js, Blender." width="49%"></a>
+  <a href="https://gavenrobertson.dev"><img src="assets/card-portfolio.svg" alt="Gaven Robertson: my portfolio at gavenrobertson.dev. Who I am, what I've built, and how to get in touch. React, three.js, Blender." width="49%"></a>
 </p>
 
 <sub>Code: <a href="https://github.com/gavenrobertson/WoWDragonWarriors">Dragon Warriors</a> · <a href="https://github.com/gavenrobertson/LineWise">LineWise</a> · <a href="https://github.com/gavenrobertson/MealAtAGlance">Meal at a Glance</a> · <a href="https://github.com/gavenrobertson/portfolio-website">gavenrobertson.dev</a></sub>
@@ -49,5 +49,6 @@ Through **Webfoot Software Studio** I design and build websites for churches and
 
 [![Website](https://img.shields.io/badge/gavenrobertson.dev-0C1611?style=for-the-badge&logo=googlechrome&logoColor=FEE123)](https://gavenrobertson.dev)
 [![Dragon Warriors](https://img.shields.io/badge/dragonwarriors.app-0B0806?style=for-the-badge&logo=battledotnet&logoColor=F0B21C)](https://dragonwarriors.app)
+[![LinkedIn](https://img.shields.io/badge/linkedin-0C1611?style=for-the-badge&logo=inspire&logoColor=FEE123)](https://www.linkedin.com/in/gavenrobertson)
 
 <img src="assets/footer.svg" alt="" width="100%">

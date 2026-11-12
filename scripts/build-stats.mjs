@@ -104,7 +104,7 @@ function build(u) {
 
   const W = 990, H = 390;
   const tiles = [
-    { label: `contributions · ${year}`, value: fmt(cc.contributionCalendar.totalContributions), color: C.accent },
+    { label: `${year} contributions`, value: fmt(cc.contributionCalendar.totalContributions), color: C.accent },
     { label: "commits", value: fmt(commits), color: C.text },
     { label: "pull requests", value: fmt(cc.totalPullRequestContributions), color: C.text },
     { label: "public repos", value: fmt(u.repositories.totalCount), color: C.text },
@@ -129,7 +129,7 @@ function build(u) {
   s += `<text x="${W - 30}" y="38" text-anchor="end" style="${MONO};font-size:14px" fill="${C.dim}">updated ${stamp}</text>`;
 
   // metric tiles, 3 x 2 on the left
-  const gx = 30, gy = 88, tw = 180, th = 128, gap = 14;
+  const gx = 30, gy = 88, tw = 190, th = 128, gap = 12;
   tiles.forEach((t, i) => {
     const x = gx + (i % 3) * (tw + gap), y = gy + Math.floor(i / 3) * (th + gap);
     s += `<rect x="${x}" y="${y}" width="${tw}" height="${th}" rx="16" fill="${C.panel}" stroke="${C.line}" stroke-width="1.5"/>`;
