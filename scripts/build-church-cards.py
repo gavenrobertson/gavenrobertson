@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the church website cards in assets/ in the same style as the project cards.
+"""Builds the client website cards (churches and organizations) in assets/ in the same style as the project cards.
 Fonts are copied from assets/card-portfolio.svg so nothing extra is needed."""
 import re, pathlib
 
@@ -104,3 +104,27 @@ chapel = f'''<g transform="translate(430 34)">
 card("capital-city-church", "Capital City Church of God", 29, "CAPITALCITYCHURCHOFGOD.COM",
      ["Homepage redesign for a church in", "Salem, Oregon that puts visitors", "and service times first."],
      ["Salem, OR", "Redesign", "Service times"], chapel, **C)
+
+# --- EHS Now: hard hat and a safety-program checklist ---
+E = dict(bg="#121417", border="#2B313A", accent="#86EFAC", text="#F3F5F7", muted="#A3ACB8", chip="#1B2026")
+hardhat = f'''<g transform="translate(436 30)">
+<rect x="0" y="0" width="176" height="236" rx="18" fill="#1B2026" stroke="{E['border']}" stroke-width="2"/>
+<path d="M58 78 a30 30 0 0 1 60 0 v10 H58 Z" fill="#FFC53D"/>
+<rect x="82" y="44" width="12" height="18" rx="3" fill="#FFC53D"/>
+<rect x="46" y="86" width="84" height="12" rx="6" fill="#F5B000"/>
+<text x="88" y="122" text-anchor="middle" style="{MONO};font-size:10.5px;letter-spacing:1px" fill="{E['muted']}">SAFETY PROGRAM</text>
+<g style="{MONO};font-size:11px" fill="{E['text']}">
+<rect x="22" y="134" width="13" height="13" rx="3" fill="#86EFAC"/><path d="M25 140.5 l2.5 2.5 l5.5 -6" stroke="#121417" stroke-width="2" fill="none"/>
+<text x="43" y="145">OSHA requirements</text>
+<rect x="22" y="156" width="13" height="13" rx="3" fill="#86EFAC"/><path d="M25 162.5 l2.5 2.5 l5.5 -6" stroke="#121417" stroke-width="2" fill="none"/>
+<text x="43" y="167">20+ templates</text>
+<rect x="22" y="178" width="13" height="13" rx="3" fill="#86EFAC"/><path d="M25 184.5 l2.5 2.5 l5.5 -6" stroke="#121417" stroke-width="2" fill="none"/>
+<text x="43" y="189">CSP consultation</text>
+<rect x="22" y="200" width="13" height="13" rx="3" fill="none" stroke="#86EFAC" stroke-width="1.5"/>
+<text x="43" y="211" fill="{E['muted']}">Gap analysis</text>
+</g>
+<rect x="22" y="222" width="132" height="4" rx="2" fill="{E['border']}"/><rect class="live" x="22" y="222" width="99" height="4" rx="2" fill="#86EFAC"/>
+</g>'''
+card("ehs-now", "EHS Now", 33, "EHSNOW.NET",
+     ["Environmental health and safety", "consulting with a custom OSHA", "safety program builder."],
+     ["Tri-Cities, WA", "OSHA", "Consulting"], hardhat, **E)
